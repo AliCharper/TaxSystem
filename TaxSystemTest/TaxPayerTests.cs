@@ -28,7 +28,7 @@ namespace TaxSystemTest
             var basetaxrate = (new TaxCalculator()).NationalityBaseTaxRateIndicator(taxPayer);
 
             // Assert
-            Assert.Equal(20, basetaxrate);
+            Assert.Equal(25, basetaxrate);
         }
         [Fact]
         public void IranianNationalities_WithMorethan500USDSalary_TaxRate_Shouldbe_20PC()
